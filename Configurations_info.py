@@ -3,7 +3,7 @@ import configparser
 class config:
     def __init__(self):
         self.parser = configparser.ConfigParser()
-        self.parser.read('C:\\Prabhu\\Relanto\\Deeplearning\\GCP\\configurations.ini')
+        self.parser.read('configurations.ini')
 
     def get_username(self):
         return self.parser['Anaplan_auth']['username']
