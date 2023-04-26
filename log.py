@@ -3,10 +3,11 @@ import time
 
 class log_information:
 
-    def log(self,filepath):
+    def log(self):
         current_time = time.strftime("%Y_%m_%d-%I_%M_%S_%p")
-        filepath = filepath.replace("\\", "\\\\")
-        filepath = filepath + "\\\\" + str(current_time)+".txt"
+        #filepath = filepath.replace("\\", "\\\\")
+        #filepath = filepath + "\\\\" + str(current_time)+".txt"
+        filepath = str(current_time)+".txt"
         logging.basicConfig(
             filename=filepath,
             level=logging.INFO,
