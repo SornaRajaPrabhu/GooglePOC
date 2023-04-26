@@ -16,7 +16,7 @@ def mainWork():
         userName = config_info.get_username()
         password = config_info.get_password()
         filepath =config_info.filepath()
-        log_info = log_details.log(filepath)
+        log_info = log_details.log()
 
         authToken,expiresAt, bAuth_FLAG = basic_auth.bAuth(userName, password, log_info)
         #expiresAt, authToken, Validate_FLAG = basic_auth.refresh(expiresAt, authToken, log_info)
